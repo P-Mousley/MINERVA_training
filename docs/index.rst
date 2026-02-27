@@ -9,7 +9,7 @@ Pre-session checklist:
 - have a working fed-id 
 
     if you do not already have a fed id, please follow this link to create a Diamond user account - https://uas.diamond.ac.uk 
-    
+
 - ability to connect to NoMachine session
     
     please follow instructions at the following link to setup a NoMachine: https://www.diamond.ac.uk/Users/Experiment-at-Diamond/IT-User-Guide/Not-at-DLS/Nomachine.html 
@@ -24,6 +24,18 @@ Pre-session checklist:
         ssh-instructions
 
 
+Notebook resources for the training session
+-------------------------------------------------
+
+- notebook for intro to data reduction
+
+case study notebooks
+----------------------
+---------------------------
+
+- Rachael
+- Emma
+- Olivia
 
 
 extra resources
