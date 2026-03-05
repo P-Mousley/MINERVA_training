@@ -9,7 +9,7 @@ Date of next online training session:
 
 Pre-session checklist:
 
-- have a working fed-id 
+- have a working fed-id and password
 
     if you do not already have a fed id, please follow this link to create a Diamond user account - https://uas.diamond.ac.uk 
 
@@ -34,12 +34,20 @@ resources for the training session
 - walkthough on experiment setup file
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 1
 
-   experiment_setup
+    questionset1
 
 case study notebooks
 .......................
+
+.. |colab-badge1| image:: https://colab.research.google.com/assets/colab-badge.svg
+   :target: https://colab.research.google.com/github/P-Mousley/MINERVA_training/blob/testing/MINERVA_calculations.ipynb
+   :alt: Open In Colab
+   :height: 20px
+
+**MINERVA Calculations set 1** |colab-badge1|
+
 
 
 examples
