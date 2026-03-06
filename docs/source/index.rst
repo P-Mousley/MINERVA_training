@@ -1,7 +1,7 @@
 MINERVA GIWAXS bootcamp
 ===============================
 
-Below are the relevant details for preparing for the upcoming online training sessions for the analysis of GIWAXS data collected at the I07 beamline at diamond. The course will give general details about analysis GIWAXS data, as well as some specific information related to the `MINERVA system`_. 
+Below are the relevant details for preparing for the upcoming online training session for the analysis of GIWAXS data collected at the I07 beamline at diamond. The course will give general details about analysis of GIWAXS data, as well as some specific information related to the `MINERVA system`_. 
 
 Date of next online training session:
 
@@ -9,10 +9,11 @@ Date of next online training session:
 
 register using this online form: `online FORM`_ 
 
-You have time to sign up until 1/4/2026, it won’t be possible to accept late registrations. 
+You have time to sign up until **1/4/2026**, it won’t be possible to accept late registrations. 
 
 
 Pre-session checklist:
+------------------------
 
 1. have a working fed-id and password
 
