@@ -3,3 +3,4 @@ nbsphinx
 jupyter_sphinx
 sphinx_collapse
 furo
+sphinx-tabs
