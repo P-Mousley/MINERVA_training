@@ -7,6 +7,11 @@ Date of next online training session:
 
      10 April 2026 from 09:30 to 13:00
 
+register using this online form: online FORM 
+
+You have time to sign up until 1/4/2026, it won’t be possible to accept late registrations. 
+
+
 Pre-session checklist:
 
 1. have a working fed-id and password
@@ -19,14 +24,21 @@ Pre-session checklist:
 
 3. ability to connect to HPC using ssh wilson
 
-    Once you are logged into a virtual linux machine, you will need to setup your SSH connection to wilson. To do this, open a new terminal , import the fast_rsm module and run the command ssh-instructions. This will give you a step-by-step guide to allow your SSH connection to the HPC cluster at Diamond.
-
+    Once you are logged into a virtual linux machine, you will need to setup your SSH connection to wilson. To do this, open a new terminal , import the fast_rsm module ussing the command
+    
     .. code:: python
 
         module load fast_rsm
+    
+    and run the command. 
+
+    .. code:: python
+
         ssh-instructions
 
+    This will open a step-by-step guide to allow your SSH connection to the HPC cluster at Diamond.
 
+ For any questions, please contact philip.mousley@diamond.ac.uk.
 
 .. _`MINERVA system`: https://www.diamond.ac.uk/default/Instruments/Structures-and-Surfaces/I07/guide/MINERVA.html
 
