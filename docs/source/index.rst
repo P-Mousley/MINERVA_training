@@ -7,7 +7,7 @@ Date of next online training session:
 
      10 April 2026 from 09:30 to 13:00
 
-register using this online form: online FORM 
+register using this online form: `online FORM`_ 
 
 You have time to sign up until 1/4/2026, it won’t be possible to accept late registrations. 
 
@@ -41,7 +41,7 @@ Pre-session checklist:
  For any questions, please contact philip.mousley@diamond.ac.uk.
 
 .. _`MINERVA system`: https://www.diamond.ac.uk/default/Instruments/Structures-and-Surfaces/I07/guide/MINERVA.html
-
+.. _`online FORM`: https://forms.office.com/Pages/ResponsePage.aspx?id=dLonnQABDU2B_x1yja6N9mz43JA3kLVEtAFCYfypj39URDVLTE83Qk5YOFBJUEdHREZEQ05TMkFUMi4u
 .. toctree::
    :maxdepth: 1
 
