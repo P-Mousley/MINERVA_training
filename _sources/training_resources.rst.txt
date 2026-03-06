@@ -1,6 +1,10 @@
 Resources for the training session
 ================================================
 
+.. warning:
+
+    **THIS SECTION IS STILL UNDER CONSTRUCTION**
+
 - notebook for intro to data reduction
 - walkthough on experiment setup file
 
@@ -11,15 +15,6 @@ Resources for the training session
 
 case study notebooks
 .......................
-
-.. |colab-badge1| image:: https://colab.research.google.com/assets/colab-badge.svg
-   :target: https://colab.research.google.com/github/P-Mousley/MINERVA_training/blob/testing/MINERVA_calculations.ipynb
-   :alt: Open In Colab
-   :height: 20px
-
-**MINERVA Calculations set 1** |colab-badge1|
-
-
 
 examples
 - Rachael
