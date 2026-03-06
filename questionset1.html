@@ -3,10 +3,10 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="prev" title="MINERVA GIWAXS bootcamp" href="index.html">
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="prev" title="Resources for the training session" href="training_resources.html">
 
     <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
-        <title>Creating the experiment setup file - MINERVA training documentation</title>
+        <title>Question set 1 - MINERVA training documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
@@ -195,7 +195,10 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Creating the experiment setup file</a></li>
+<li class="toctree-l1 current has-children"><a class="reference internal" href="training_resources.html">Resources for the training session</a><input aria-label="Toggle navigation of Resources for the training session" checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Question set 1</a></li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -216,7 +219,7 @@
         </a>
         <div class="content-icon-container">
           <div class="view-this-page">
-  <a class="muted-link" href="_sources/experiment_setup.rst.txt" title="View this page">
+  <a class="muted-link" href="_sources/questionset1.rst.txt" title="View this page">
     <svg><use href="#svg-eye"></use></svg>
     <span class="visually-hidden">View this page</span>
   </a>
@@ -234,68 +237,33 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="creating-the-experiment-setup-file">
-<h1>Creating the experiment setup file<a class="headerlink" href="#creating-the-experiment-setup-file" title="Link to this heading">¶</a></h1>
-<p>To process your collected data you will need to create an experimental setup file, so that the fast_rsm software understands both the geometry of the setup as well as the output you would like it to calculate.</p>
-<section id="local-data-path">
-<h2>local_data_path<a class="headerlink" href="#local-data-path" title="Link to this heading">¶</a></h2>
-<blockquote>
-<div><p>Set this to the directory path where your files are saved, note you will need to include any subdirectories in this path e.g</p>
-</div></blockquote>
+          <section id="question-set-1">
+<h1>Question set 1<a class="headerlink" href="#question-set-1" title="Link to this heading">¶</a></h1>
+<section id="create-the-setup-file">
+<h2>Create the setup file<a class="headerlink" href="#create-the-setup-file" title="Link to this heading">¶</a></h2>
+<p>Try creating your own experiment setup file using the details described below, then compare to the example setup file by clicking the expandable text underneath.</p>
+<p><strong>experiment1</strong></p>
+<p>The experiment was conducted in experimental hutch 1 using a vertical setup, and the data is being saved to the following path <em>'/dls/science/groups/das/ExampleData/i07/fast_rsm_example_data/si30563'</em>. After aligning the sample the beam centre was <em>(1428,978)</em> and the detector distance was <em>0.4264 meters</em>. You would like the mapper to calculate both Qmap and Intensity vs Q profiles, and save the output to the folder <em>'/home/myoutputs/'</em> . Additionally you would like to map each image individually, with a size of 1200 x 1200 pixels for the Qmap images, and a radialstep of 0.01 for the Intensity Vs Q profiles. You also have created a mask saved to <em>'/home/mymasks/mask1.edf'</em>. The detector positioning system was not used.</p>
+<div class="sphinx_collapse docutils container">
+<input class="sphinx_collapse__input" id="e2ed4e1d-f23d-4227-b48b-2ec932e1a420" name="e2ed4e1d-f23d-4227-b48b-2ec932e1a420" type="checkbox"><label class="sphinx_collapse__label" for="e2ed4e1d-f23d-4227-b48b-2ec932e1a420"><i class="sphinx_collapse__icon"></i>ANSWER - click to view full example setup file</label><div class="sphinx_collapse__content docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span> <span class="o">=</span> <span class="s1">&#39;vertical&#39;</span>
+<span class="n">experimental_hutch</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">local_data_path</span> <span class="o">=</span>   <span class="s1">&#39;/dls/science/groups/das/ExampleData/i07/fast_rsm_example_data/si30563&#39;</span>
+<span class="n">local_output_path</span> <span class="o">=</span> <span class="s1">&#39;/home/myoutputs/&#39;</span>
+<span class="n">beam_centre</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1428</span><span class="p">,</span><span class="mi">978</span><span class="p">)</span>
+<span class="n">detector_distance</span> <span class="o">=</span><span class="mf">0.4264</span>
+<span class="n">qmapbins</span><span class="o">=</span><span class="p">(</span><span class="mi">1200</span><span class="p">,</span><span class="mi">1200</span><span class="p">)</span>
+<span class="n">radialstepval</span><span class="o">=</span><span class="mf">0.01</span>
+<span class="n">edfmaskfile</span><span class="o">=</span> <span class="s1">&#39;/home/mymasks/mask1.edf&#39;</span>
+<span class="n">process_outputs</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;pyfai_ivsq&#39;</span><span class="p">]</span>
+<span class="n">map_per_image</span> <span class="o">=</span> <span class="kc">True</span>
+</pre></div>
+</div>
+</div>
+</div>
 </section>
-<section id="local-output-path">
-<h2>local_output_path<a class="headerlink" href="#local-output-path" title="Link to this heading">¶</a></h2>
-<blockquote>
-<div><p>Set this to the path where you want the output from the data processing to be saved e.g.</p>
-</div></blockquote>
-</section>
-<section id="setup">
-<h2>setup<a class="headerlink" href="#setup" title="Link to this heading">¶</a></h2>
-<blockquote>
-<div><p>How was your sample mounted? Options are ‘horizontal’, ‘vertical’ and ‘DCD’</p>
-</div></blockquote>
-</section>
-<section id="experimental-hutch">
-<h2>experimental_hutch<a class="headerlink" href="#experimental-hutch" title="Link to this heading">¶</a></h2>
-<blockquote>
-<div><p>which experimental hutch was used 1= experimental hutch 1, 2=experimental hutch 2</p>
-</div></blockquote>
-</section>
-<section id="beam-centre">
-<h2>beam_centre<a class="headerlink" href="#beam-centre" title="Link to this heading">¶</a></h2>
-<blockquote>
-<div><p>The beam centre, as can be read out from GDA, in pixel_x, pixel_y.</p>
-</div></blockquote>
-</section>
-<section id="detector-distance">
-<h2>detector_distance<a class="headerlink" href="#detector-distance" title="Link to this heading">¶</a></h2>
-<blockquote>
-<div><p>The distance between the sample and the detector (or, if using the DCD, the distance between the receiving slit and the detector). Units of meters.</p>
-</div></blockquote>
-</section>
-<section id="process-outputs">
-<h2>process_outputs<a class="headerlink" href="#process-outputs" title="Link to this heading">¶</a></h2>
-<blockquote>
-<div><p>define what outputs you would like from the processing in a list e.g. [‘pyfai_ivsq’]. The options available are:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><strong>full_reciprocal_map</strong>: calculates a full reciprocal space map combining all scans listed into a single volume. Use this option for scan such as crystal truncation rod scans, fractional order rod scans, or in-plane HK scans.</p></li>
-<li><p><strong>pyfai_qmap</strong>: calculates 2d q_parallel Vs q_perpendicular plots using pyFAI. Use this options for GIWAXS measurements either with a static detector or a moving detector.</p></li>
-<li><p><strong>pyfai_ivsq</strong>: calculates 1d Intensity Vs Q using pyFAI. Use this options for GIWAXS measurements either with a static detector or a moving detector.</p></li>
-<li><p><strong>pyfai_exitangles</strong>: calculates a 2d map of horizontal exit angle Vs vertical exit angle</p></li>
-</ul>
-</div></blockquote>
-</div></blockquote>
-</section>
-<section id="map-per-image">
-<h2>map_per_image<a class="headerlink" href="#map-per-image" title="Link to this heading">¶</a></h2>
-<blockquote>
-<div><p>this option will set whether to combine all scans into a single output:</p>
-<blockquote>
-<div><p>map_per_image=False -&gt; gives a single output file (either HKL volume or mapped GIWAXS data)</p>
-<p>map_per_image=True -&gt; analyses each image individually creating multiple output files (either HKL volumes or mapped GIWAXS)</p>
-</div></blockquote>
-</div></blockquote>
+<section id="run-the-processing">
+<h2>run the processing<a class="headerlink" href="#run-the-processing" title="Link to this heading">¶</a></h2>
 </section>
 </section>
 
@@ -305,14 +273,14 @@
         
         <div class="related-pages">
           
-          <a class="prev-page" href="index.html">
+          <a class="prev-page" href="training_resources.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Home</div>
+                <div class="title">Resources for the training session</div>
                 
               </div>
             </a>
@@ -346,15 +314,9 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Creating the experiment setup file</a><ul>
-<li><a class="reference internal" href="#local-data-path">local_data_path</a></li>
-<li><a class="reference internal" href="#local-output-path">local_output_path</a></li>
-<li><a class="reference internal" href="#setup">setup</a></li>
-<li><a class="reference internal" href="#experimental-hutch">experimental_hutch</a></li>
-<li><a class="reference internal" href="#beam-centre">beam_centre</a></li>
-<li><a class="reference internal" href="#detector-distance">detector_distance</a></li>
-<li><a class="reference internal" href="#process-outputs">process_outputs</a></li>
-<li><a class="reference internal" href="#map-per-image">map_per_image</a></li>
+<li><a class="reference internal" href="#">Question set 1</a><ul>
+<li><a class="reference internal" href="#create-the-setup-file">Create the setup file</a></li>
+<li><a class="reference internal" href="#run-the-processing">run the processing</a></li>
 </ul>
 </li>
 </ul>
