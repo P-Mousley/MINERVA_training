@@ -43,8 +43,5 @@ Pre-session checklist:
 
 .. _`MINERVA system`: https://www.diamond.ac.uk/default/Instruments/Structures-and-Surfaces/I07/guide/MINERVA.html
 .. _`online FORM`: https://forms.office.com/Pages/ResponsePage.aspx?id=dLonnQABDU2B_x1yja6N9mz43JA3kLVEtAFCYfypj39URDVLTE83Qk5YOFBJUEdHREZEQ05TMkFUMi4u
-.. toctree::
-   :maxdepth: 1
 
-   training_resources
    
