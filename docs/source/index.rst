@@ -50,3 +50,4 @@ Pre-session checklist:
 
     questionset1
     questionset2
+    toolbox_guide
