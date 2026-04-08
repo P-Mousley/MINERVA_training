@@ -3,10 +3,10 @@
   <head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html">
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html"><link rel="next" title="Question set 2 - minimum + optional all" href="questionset2.html"><link rel="prev" title="MINERVA GIWAXS bootcamp" href="index.html">
 
     <!-- Generated with Sphinx 9.1.0 and Furo 2025.12.19 -->
-        <title>Question set 1 - MINERVA training documentation</title>
+        <title>Question set 1 - minimum settings - MINERVA training documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
     <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
@@ -194,7 +194,11 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  
+  <ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Question set 1 - minimum settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="questionset2.html">Question set 2 - minimum + optional all</a></li>
+</ul>
+
 </div>
 </div>
 
@@ -231,31 +235,19 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="question-set-1">
-<h1>Question set 1<a class="headerlink" href="#question-set-1" title="Link to this heading">¶</a></h1>
+          <section id="question-set-1-minimum-settings">
+<h1>Question set 1 - minimum settings<a class="headerlink" href="#question-set-1-minimum-settings" title="Link to this heading">¶</a></h1>
 <section id="create-the-setup-file">
 <h2>Create the setup file<a class="headerlink" href="#create-the-setup-file" title="Link to this heading">¶</a></h2>
 <p>Try creating your own experiment setup file using the details described below, then compare to the example setup file by clicking the expandable text underneath.</p>
 <p><strong>experiment1</strong></p>
-<p>The experiment was conducted in experimental hutch 1 using a horizontal setup, and the data is being saved to the following path <em>'/dls/science/groups/das/ExampleData/i07/fast_rsm_example_data/si30563'</em>. After aligning the sample the beam centre was <em>(1428,978)</em> and the detector distance was <em>0.4264 meters</em>. You would like the mapper to calculate both Qmap and Intensity vs Q profiles, and save the output to the folder <em>'/home/myoutputs/'</em> . Additionally you would like to map each image individually, with a size of 1200 x 1200 pixels for the Qmap images, and a radialstep of 0.01 for the Intensity Vs Q profiles. You also have created a mask saved to <em>'/home/mymasks/mask1.edf'</em>. The detector positioning system was not used.</p>
-<div class="sphinx_collapse docutils container">
-<input class="sphinx_collapse__input" id="2b61cfd1-6b8d-4dc9-ad08-9255d1978922" name="2b61cfd1-6b8d-4dc9-ad08-9255d1978922" type="checkbox"><label class="sphinx_collapse__label" for="2b61cfd1-6b8d-4dc9-ad08-9255d1978922"><i class="sphinx_collapse__icon"></i>ANSWER - click to view full example setup file</label><div class="sphinx_collapse__content docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span> <span class="o">=</span> <span class="s1">&#39;horizontal&#39;</span>
-<span class="n">experimental_hutch</span><span class="o">=</span><span class="mi">1</span>
-<span class="n">local_data_path</span> <span class="o">=</span>   <span class="s1">&#39;/dls/science/groups/das/ExampleData/i07/fast_rsm_example_data/si30563&#39;</span>
-<span class="n">local_output_path</span> <span class="o">=</span> <span class="s1">&#39;/home/myoutputs/&#39;</span>
-<span class="n">beam_centre</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1428</span><span class="p">,</span><span class="mi">978</span><span class="p">)</span>
-<span class="n">detector_distance</span> <span class="o">=</span><span class="mf">0.4264</span>
-<span class="n">qmapbins</span><span class="o">=</span><span class="p">(</span><span class="mi">1200</span><span class="p">,</span><span class="mi">1200</span><span class="p">)</span>
-<span class="n">radialstepval</span><span class="o">=</span><span class="mf">0.01</span>
-<span class="n">edfmaskfile</span><span class="o">=</span> <span class="s1">&#39;/home/mymasks/mask1.edf&#39;</span>
-<span class="n">process_outputs</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;pyfai_ivsq&#39;</span><span class="p">]</span>
-<span class="n">map_per_image</span> <span class="o">=</span> <span class="kc">True</span>
-</pre></div>
-</div>
-</div>
-</div>
+<p>The experiment was conducted in experimental hutch 1 using a horizontal setup, and the data is being saved to the following path <em>'/dls/science/groups/das/ExampleData/i07/fast_rsm_example_data/si40084/'</em>. After aligning the sample the beam centre was <em>(1455,270</em> and the detector distance was <em>0.45 meters</em>. You would like the mapper to calculate both Qmap and Intensity vs Q profiles, and save the output to the data directory in the subfolder <em>'processed_data'</em> . Additionally you would like to map each image individually.</p>
 <p><strong>experiment2</strong></p>
+<p>The experiment was conducted in experimental hutch 2, with data saved to the following path <em>'/dls/science/groups/das/ExampleData/i07/fast_rsm_example_data/si41357'</em> within the subfolder <em>'sample_A'</em>. The beam centre is show in the image below with the two red lines, and the detector distance was <em>89 cm</em>. You would like for all images to be combined into one map of the horizontal vs vertical exit angle, with a size of <em>800x800 pixels</em> saved into a <em>'sample_A'</em> subfolder in <em>'/home/myoutputs/'</em>. The detector positioning system was not used.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/example_centre_image.png"><img alt="example image with beam centre lines" src="_images/example_centre_image.png" style="width: 500px;" />
+</a>
+</figure>
 </section>
 <section id="run-the-processing">
 <h2>run the processing<a class="headerlink" href="#run-the-processing" title="Link to this heading">¶</a></h2>
@@ -267,8 +259,26 @@
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="questionset2.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Question set 2 - minimum + optional all</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -299,7 +309,7 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Question set 1</a><ul>
+<li><a class="reference internal" href="#">Question set 1 - minimum settings</a><ul>
 <li><a class="reference internal" href="#create-the-setup-file">Create the setup file</a></li>
 <li><a class="reference internal" href="#run-the-processing">run the processing</a></li>
 </ul>
