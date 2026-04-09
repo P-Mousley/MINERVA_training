@@ -48,6 +48,7 @@ Pre-session checklist:
 .. toctree::
     :maxdepth: 1
 
+    outline
     questionset1
     questionset2
     toolbox_guide
