@@ -13,7 +13,7 @@ The experiment was conducted in experimental hutch 1 using a horizontal setup, a
 
 **experiment 2**
 
-The experiment was conducted in experimental hutch 2, with data saved to the following path *'/dls/science/groups/das/ExampleData/i07/fast_rsm_example_data/si41357-1'* within the subfolder *'sample_A'*. The beam centre is show in the image below with the two red lines, and the detector distance was *89 cm*. You would like for all images to be combined into one map of the horizontal vs vertical exit angle, with a size of *800x800 pixels* saved into a *'sample_A'* subfolder in *'/home/myoutputs/'*. The detector positioning system was not used. 
+The experiment was conducted in experimental hutch 2, with data saved to the following path *'/dls/science/groups/das/ExampleData/i07/fast_rsm_example_data/si41357-1'* within the subfolder *'sample_A'*. The beam centre is show in the image below with the two red lines, and the detector distance was *89 cm*. You would like for all images to be combined into one map of the horizontal vs vertical exit angle, saved into a *'sample_A'* subfolder in *'/home/myoutputs/'*.
 
 .. figure:: ./figures/example_centre_image.png
     :alt: example image with beam centre lines
